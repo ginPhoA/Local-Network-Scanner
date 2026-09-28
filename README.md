@@ -1,4 +1,4 @@
-# Local Network Scanner — Stage 0 MVP
+# Local Network Scanner
 
 A small FastAPI application for an authorised, fixed-scope Nmap scan of the public IPv4 address detected. The page has one button and accepts no scan target, ports, flags, paths, or other configuration from the browser.
 
