@@ -103,3 +103,4 @@ These runtime files are ignored by Git. The `.gitkeep` files simply preserve the
 This deliberately has no Docker, database, authentication, scan history, AI analysis, comparisons, CI/CD, or target/configuration controls. Those are outside the scope of the project.
 
 Overall, extremely basic.
+- Vibecoded bullshit
