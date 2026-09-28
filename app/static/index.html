@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Network Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Case of testing theme colour on mobile -->
+    <meta name="theme-color" content="#0b1120">
+  </head>
+  
+  <body>
+    <!-- Primary content for the local scanner. -->
+    <main class="main-content">
+      <header>
+        <!-- <img alt="tbd"> -->
+        <h1>Localised Network Scanner</h1>
+      </header>
+
+      <div class="description">
+        <p>
+          This is a web-app that runs in your browser and scans your public IP address for internet facing ports,
+          and the services running on them.<br>
+          It is intended to be run locally and does not send any data to a server.
+        </p>
+      
+        <p class="note">
+          It scans the router/WAN address, so it only sees services exposed to the internet.
+        </p>
+      </div>
+
+
+      <!-- Starts the scan - display progress and/or errors -->
+      <section id="button-section" aria-labelledby="scan-heading">
+        <button id="scan-button" class="scan-button" type="button">Start scan</button>
+        <p id="status" class="status" role="status" aria-live="polite">Ready to scan.</p>
+        <p id="error" class="error" role="alert" hidden></p>
+      </section>
+
+      <!-- Becomes visible only after the scan returns results -->
+      <section id="result-section" hidden aria-labelledby="result-heading">
+        <header>
+          <h2 id="result-heading">Port results</h2>
+        </header> 
+
+        <p id="target"></p>
+        <ul id="result-list"></ul>
+      </section>
+
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

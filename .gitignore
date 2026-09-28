@@ -1,0 +1,16 @@
+# Keep this repository focused on the runnable scanner.
+# Everything is ignored unless it is explicitly allowed below.
+*
+
+# Repository configuration and application source.
+!/.gitignore
+!/app/
+!/app/**
+!/requirements.txt
+
+# Keep the runtime folders present in a fresh checkout, but do not commit
+# scan output or failure logs because they can contain local network details.
+!/results/
+!/results/.gitkeep
+!/Failed_Scans/
+!/Failed_Scans/.gitkeep
