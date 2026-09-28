@@ -1,0 +1,14 @@
+
+*
+
+# Repository configuration and application source.
+!/.gitignore
+!/app/
+!/app/**
+!/requirements.txt
+
+# Keep the runtime folders present - Dont commit them
+!/results/
+!/results/.gitkeep
+!/Failed_Scans/
+!/Failed_Scans/.gitkeep
